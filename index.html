@@ -1,42 +1,71 @@
-<DOCTYPE html>
-  <html>
-    <body>
-      <head>
-        <title>Welcome</title>
-        <link href="./styles/style.css" type="text/css" rel="stylesheet" />
-      </head>
-      <div class="nav">
-        <div class="container">
-          <ul>
-            <li><a href="project1" class="btn"> projects</a></li>
-            <li><a class="btn" href="aboutme.html">about me</a></li>
-            <li><a class="btn" href="contact.html">contacts</a></li>
-          </ul>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Hi!</title>
+  </head>
+  <body>
+    <header id="welcome" class="grid">
+      <div class="bg-image"></div>
+      <h1>Welcome Web portfolio</h1>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos
+        quae eligendi iusto cupiditate laborum ut repellat illo commodi
+        obcaecati eveniet.
+      </p>
+    </header>
+    <nav>
+        <a href="#welcome">top</a>
+        <a href="#projects">projects</a>
+        <a href="#about">about</a>
+        <a href="#contact">contact</a>
+    </nav>
+    <main>
+      <article id="about-me" class="grid">
+        <div class="content-wrap">
+          <h2 class="title">about me ...</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nam
+            quod mollitia ex. Labore, architecto! Velit recusandae itaque, a
+            aperiam ullam illo, quam dolorum earum, voluptatibus magni eos
+            dolor! Similique ea ad veritatis provident, et architecto facilis
+            blanditiis repellat consequatur!
+          </p>
         </div>
-      </div>
-      <div class="main">
-        <h1>Welcome...</h1>
-        <img
-          src="images/Hipster-pug.jpg"
-          alt="picture of me"
-          height="250px"
-          width="250px"
-        />
-        <p>
-          Little blurb about me with link at some point to
-          <a href="aboutme.html">about me</a>
-        </p>
-
+      </article>
+      <section id="projects" class="grid">
         <ul>
-          <a href="project1.html">project1</a>
-        </ul>
-        <ul>
-          <a href="project2.html">project2</a>
-        </ul>
-        <ul>
-          <a href="project3.html">project3</a>
-        </ul>
-      </div>
-    </body>
-  </html></DOCTYPE
->
+          <li>
+            <div id="project1" class="card">
+              <img src='./images/Hipster-pug.jpg'>
+              <h3>project 1 title</h3>
+              <p>blurb about project 1... burb about project 1 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, enim?</p>
+            </div>
+          </li>
+          <li>
+            <div id="project2" class="card">
+              <img src='./images/Hipster-pug.jpg'>
+              <h3>project 2 title</h3>
+              <p>blurb about project 2... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, quidem?</p>
+            </div>
+          </li><li>
+            <div id="project3"class="card">
+              <img src='./images/Hipster-pug.jpg'>
+              <h3>project 3 title</h3>
+              <p>blurb about project 3 ...Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, temporibus!</p>
+            </div>
+          </li>
+      </section>
+      <aside id="contact-me">
+        <a>email</a>
+        <a>linked in</a>
+        <a>codepen</a>
+        <a>github</a>
+      </aside>
+    </main>
+  </body>
+</html>
